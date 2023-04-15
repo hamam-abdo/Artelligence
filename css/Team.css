@@ -1,0 +1,64 @@
+.team {
+  padding: var(--padding);
+  background-color: #eafcfe;
+}
+.team .team-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+.team .team-cont .box {
+  background-color: var(--min-color);
+  border-radius: 30px;
+  border-bottom: 2px solid #249cb3;
+}
+.team .team-cont img {
+  width: 100%;
+}
+.team .team-cont h2 {
+  margin: 20px 0 5px;
+  color: var(--max-color);
+}
+.team .team-cont ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.team .team-cont .box a {
+  text-decoration: none;
+  color: var(--min-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-1) 0%,
+    var(--gradient-2) 100%
+  );
+}
+.team .team-cont .box:hover a {
+  background-image: linear-gradient(to right, #042237 0%, #042237 51%, #042237 100%);
+}
+.team .team-cont .box a:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}

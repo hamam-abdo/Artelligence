@@ -1,0 +1,224 @@
+.About {
+  padding: var(--padding);
+}
+.About .container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.About .container .img {
+  position: relative;
+}
+
+.About .container .img .im-2 {
+  position: absolute;
+  bottom: -25px;
+  left: -20px;
+  z-index: -1;
+}
+.About .container .cont {
+  margin-top: 30px;
+  color: var(--max-color);
+}
+.About .container .cont p {
+  line-height: 1.7;
+  font-size: 19px;
+  color: var(--p-color);
+}
+.About .container .cont h3 {
+  color: var(--hover-text);
+}
+.About .container .cont h1 {
+  margin: 10px 0;
+  font-size: 47px;
+}
+.About .container ul {
+  list-style: none;
+  margin: 20px 0;
+}
+.About .container li {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 19px;
+}
+.About .container li i {
+  color: var(--min-color);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-image: linear-gradient(
+    to right,
+    #082e45 0%,
+    #17677e 51%,
+    #249cb3 100%
+  );
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.About .container .cont .btn {
+  margin-top: 10px;
+}
+@media (max-width: 1199px) {
+  .About .container .img .im-1 {
+    width: 450px;
+  }
+  .About .container .cont h1 {
+    font-size: 40px;
+  }
+  .About .container .cont p,
+  .About .container li {
+    font-size: 17px;
+  }
+}
+@media (max-width: 991px) {
+  .About .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .About .container .img,
+  .container .cont .btn {
+    margin: 10px auto;
+  }
+  .About .container li i {
+    display: none;
+  }
+  .About .container .cont h1 {
+    margin: 10px auto;
+    font-size: 30px;
+    max-width: 330px;
+  }
+  .About .container .img .im-1 {
+    max-width: 100%;
+  }
+}
+
+.Count {
+  padding: 100px 0 450px;
+  background-color: #eafcfe;
+}
+.Count .boxs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .Count .boxs {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+.Count .boxs .box {
+  background-color: var(--min-color);
+  padding: 20px;
+  border-radius: 30px;
+  border-bottom: 2px solid #249cb3;
+  transition: var(--transition);
+}
+.Count .boxs .box h2 {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.Count .boxs .box h2::after {
+  position: relative;
+  content: "+";
+  left: 5px;
+}
+.Count .boxs .box:nth-child(3) h2::after {
+  content: "%";
+}
+.Count .boxs .img {
+  margin: 20px auto;
+  background-color: #eafcfe;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.Count .boxs .box:hover,
+.Count .boxs .box .img:hover {
+  transform: translateY(-5px);
+}
+
+.vedio {
+  cursor: pointer;
+  margin-top: -358px;
+}
+.vedio img {
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .br {
+    padding: 100px 0 300px;
+  }
+  .vedio {
+    margin-top: -158px;
+  }
+}
+
+.ovr {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+}
+.ar-c {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 1100;
+}
+
+.ar-c video {
+  max-width: 100%;
+}
+.ar-c span {
+  position: absolute;
+  right: -20px;
+  top: -45px;
+  color: var(--p-color);
+  font-size: 35px;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.ar-c span:hover {
+  color: var(--min-color);
+}
+
+
+
+
+
+
+
+
+
